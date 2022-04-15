@@ -1,2 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500;600;700&family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;500;600;700&family=Kumbh+Sans:wght@400;500;600;700&family=Lexend+Deca:wght@100;200;300;400&family=Outfit:wght@100;300;400;600&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800;900&family=Red+Hat+Display:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700&display=swap');
 
+body{
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    font-family: "Karla", sans-serif;
+}
+main{
+    display: grid;
+    grid-template-columns: 315px;
+    grid-template-rows: 260px 225px 225px;
+    justify-items: stretch;
+    border-radius: 6px;
+    box-shadow: 0px 5px 30px 2px hsl(0, 0%, 87%);
+}
+
+section:first-child{
+    background-color: white;
+    border-radius: 6px 6px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section:first-child .title{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 19px;
+}
+section:first-child .description{
+    color: hsl(71, 73%, 54%);
+    font-weight: 600;
+    font-size: 16px;
+}
+section:first-child .resume{
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+section:nth-child(2){
+    background-color: hsl(179, 62%, 43%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section:nth-child(2) .title{
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+
+}
+section:nth-child(2) .description{
+    color: hsl(179, 69%, 85%);
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+span{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+section:nth-child(2) .resume{
+    color: hsl(178, 58%, 89%);
+    font-weight: 400;
+    font-size: 16px;
+}
+.button{
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 20px 2px hsl(179, 36%, 42%);
+}
+
+section:nth-child(3){
+    background-color: hsl(179, 44%, 56%);
+    border-radius: 0px 0px 6px 6px;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+}
+section:nth-child(3) .title{
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    padding-bottom: 1.2rem;
+}
+section:nth-child(3) .resume{
+    color: hsl(180, 58%, 80%);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.attribution{ 
+    color: hsl(179, 62%, 43%);
+    font-size: 11px; 
+    font-weight: 700;
+    text-align: center; 
+    margin-bottom: -60px;
+}
+.attribution a{ 
+    color: hsl(0, 0%, 41%);    
+}
