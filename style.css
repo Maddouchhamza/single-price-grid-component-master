@@ -124,3 +124,63 @@ section:nth-child(3) .resume{
 .attribution a{ 
     color: hsl(0, 0%, 41%);    
 }
+
+
+@media screen and (min-width:1024px){
+    body{
+        height: 100vh;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 325px 325px;
+        grid-template-rows: 225px 225px;
+    }
+    section:first-child{
+        border-radius: 6px 6px 0px 0px;
+        grid-column: 1/3;
+        padding-left: 2.5rem;
+        padding-right: 1rem;
+        padding-top: 1.7rem;
+        padding-bottom: 1.5rem;
+    }
+    section:first-child .title{
+        color: hsl(179, 62%, 43%);
+        font-weight: 700;
+        font-size: 24px;
+    }
+    section:first-child .description{
+        color: hsl(71, 73%, 54%);
+        font-weight: 600;
+        font-size: 19px;
+    }
+    section:first-child .resume{
+        color: hsl(218, 22%, 67%);
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    
+    section:nth-child(2){
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        border-radius: 0px 0px 0px 6px;
+    }
+    section:nth-child(3){
+        background-color: hsl(179, 44%, 56%);
+        border-radius: 0px 0px 6px 0px;
+        padding-left: 2.5rem;
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+    }
+    section:nth-child(3) .resume{
+        color: hsl(180, 49%, 91%);
+    } 
+    .attribution{ 
+        color: hsl(179, 62%, 43%);
+        font-size: 14px; 
+        font-weight: 700;
+        text-align: center; 
+        margin-top: 170px;
+    }
+    
+}
